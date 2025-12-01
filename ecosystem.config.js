@@ -21,7 +21,7 @@ module.exports = {
       user: 'ubuntu',                           // 服务器用户名
       host: ['106.53.163.141'],                 // 服务器IP地址
       ref: 'origin/main',                       // 要拉取的分支
-      repo: 'https://github.com/eiaouan/tailwind-nextjs-starter-blog.git', // Git仓库地址
+      repo: 'git@github.com:eiaouan/tailwind-nextjs-starter-blog.git', // Git仓库地址
       path: '/home/program/tailwind-nextjs-starter-blog',                  // 服务器上的部署路径
       // 🎯 最重要的部分：部署后执行的命令
       'post-deploy': `
