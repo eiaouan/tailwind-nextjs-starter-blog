@@ -18,11 +18,11 @@ module.exports = {
   // 部署配置（核心部分）
   deploy: {
     production: {
-	user: 'root',                           // 服务器用户名
+      user: 'root',                           // 服务器用户名
       host: ['106.53.163.141'],                 // 服务器IP地址
       ref: 'origin/main',                       // 要拉取的分支
       repo: 'git@github.com:eiaouan/tailwind-nextjs-starter-blog.git', // Git仓库地址
-      path: '/home/program/tailwind-nextjs-starter-blog',                  // 服务器上的部署路径
+      path: '/home/program',                  // 服务器上的部署路径
       // 🎯 最重要的部分：部署后执行的命令
       'post-deploy': `
         yarn install &&           # 安装依赖
