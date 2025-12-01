@@ -18,7 +18,7 @@ module.exports = {
   // 部署配置（核心部分）
   deploy: {
     production: {
-      user: 'ubuntu',                           // 服务器用户名
+	user: 'root',                           // 服务器用户名
       host: ['106.53.163.141'],                 // 服务器IP地址
       ref: 'origin/main',                       // 要拉取的分支
       repo: 'git@github.com:eiaouan/tailwind-nextjs-starter-blog.git', // Git仓库地址
