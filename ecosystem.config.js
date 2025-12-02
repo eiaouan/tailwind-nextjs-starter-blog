@@ -27,6 +27,7 @@ module.exports = {
       'post-deploy': `
         yarn install &&           # 安装依赖
         yarn build &&         # 执行构建
+        yarn start &&
         pm2 reload ecosystem.config.js --env production  # 重启应用
       `,
       ssh_options: ['StrictHostKeyChecking=no']
